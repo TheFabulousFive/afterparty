@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -12,15 +11,6 @@ class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => new _SplashScreenState();
 }
-
-/// // 1. After the page has been created, register it with the app routes 
-/// routes: <String, WidgetBuilder>{
-///   SplashScreen.routeName: (BuildContext context) => new SplashScreen(title: "SplashScreen"),
-/// },
-///
-/// // 2. Then this could be used to navigate to the page.
-/// Navigator.pushNamed(context, SplashScreen.routeName);
-///
 
 class _SplashScreenState extends State<SplashScreen> {
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:afterparty/components/components.dart';
 
 class HomePageTracksPartial extends StatefulWidget {
   @override
@@ -9,7 +10,17 @@ class _HomePageTracksPartialState extends State<HomePageTracksPartial> {
   @override
   Widget build(BuildContext context) {
     return new Container(
-        color: Colors.blue
+        child: new ListView(children: <Widget>[
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem(),
+          new TrackFeedItem()
+        ],),
     );
   }
 }
