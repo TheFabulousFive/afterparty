@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:afterparty/partials/home_page_welcome.dart';
+import 'package:afterparty/partials/home_page_tracks.dart';
+import 'package:afterparty/partials/home_page_venue.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
@@ -29,9 +33,9 @@ class _HomePageState extends State<HomePage> {
           });
         },
         children: <Widget>[
-          new Container(color: Colors.red),
-          new Container(color: Colors.green),
-          new Container(color: Colors.blue),
+          new HomePageWelcomePartial(),
+          new HomePageTracksPartial(),
+          new HomePageVenuePartial(),
         ],
 
       ),
