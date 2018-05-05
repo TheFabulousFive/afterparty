@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'pages/splash_screen.dart';
 import 'pages/page_home.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(new App());
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
