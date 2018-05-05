@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'pages/splash_screen.dart';
+import 'pages/page_home.dart';
 
 void main() => runApp(new MyApp());
 
@@ -12,24 +13,10 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      routes: <String, WidgetBuilder>{
+        '/HomeScreen': (BuildContext context) => new HomePage()
+      },
+      home: new HomePage()
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-    return new SplashScreen();
   }
 }

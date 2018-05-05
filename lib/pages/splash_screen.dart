@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -21,14 +23,26 @@ class SplashScreen extends StatefulWidget {
 ///
 
 class _SplashScreenState extends State<SplashScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+    _appInit();
+  }
+  _appInit() async {
+    var _duration = new Duration(seconds: 2);
+    return new Timer(_duration, _appInitCallback);
+  }
+
+  _appInitCallback() {
+    Navigator.of(context).pushReplacementNamed('/HomeScreen');
+  }
+
   @override
   Widget build(BuildContext context) {
         return new Scaffold(body:
         new Center(
           child: new Text('afterparty'),
         ));
-  }
-
-  void _onFloatingActionButtonPressed() {
   }
 }
