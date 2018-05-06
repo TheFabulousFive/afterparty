@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
           },
           items: <BottomNavigationBarItem>[
             new BottomNavigationBarItem(
-                icon: new Icon(Icons.home), title: new Text('WELCOME')),
+                icon: new Icon(Icons.home), title: new Text('YOUR MOVES')),
             new BottomNavigationBarItem(
                 icon: new Icon(Icons.music_note), title: new Text('TRACKS')),
             new BottomNavigationBarItem(

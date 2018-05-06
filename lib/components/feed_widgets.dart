@@ -22,15 +22,15 @@ class FullWidthText extends StatelessWidget {
 
 
 class StageFeed extends StatelessWidget {
-  static const _PADDING = 10.0;
+  static const _PADDING = 30.0;
   final String name;
   final String byline;
-  StageFeed({this.name = "Stage Name", this.byline = "Stage Byline"});
+  StageFeed({this.name = "Electric Daisy Carnival Orlando, 2018", this.byline = "November 2018"});
 
   @override
   Widget build(BuildContext context) {
     return new Container(
-      color: Colors.white,
+      color: Colors.black,
       child: new Padding(
         padding: new EdgeInsets.all(_PADDING),
         child: new Column(
@@ -38,12 +38,16 @@ class StageFeed extends StatelessWidget {
             new Padding(
                 padding: new EdgeInsets.only(bottom: _PADDING),
                 child: new Image.network(
-                    'https://media.giphy.com/media/R7XgytgbsYD1C/giphy.gif')),
+                    'https://media.giphy.com/media/l0HlP6ngCGSJiffhu/giphy.gif')),
             new FullWidthText(name, new TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 20.0
+              fontSize: 18.0,
+              color: Colors.white,
             )),
-            new FullWidthText(byline),
+            new FullWidthText(byline, new TextStyle(
+              color: Colors.white
+            )),
+
           ],
         ),
       ),
@@ -55,12 +59,12 @@ class TrackFeedItem extends StatelessWidget {
   static const _PADDING = 10.0;
   final String name;
   final String byline;
-  TrackFeedItem({this.name = "Track Name", this.byline = "Steve the Machine"});
+  TrackFeedItem({this.name = "I'm The One", this.byline = "DJ Khaled"});
 
   @override
   Widget build(BuildContext context) {
     return new Container(
-      color: Colors.white,
+      color: Colors.black,
       child: new Padding(
         padding: new EdgeInsets.all(_PADDING),
         child: new Column(
@@ -68,12 +72,15 @@ class TrackFeedItem extends StatelessWidget {
             new Padding(
                 padding: new EdgeInsets.only(bottom: _PADDING),
                 child: new Image.network(
-                    'https://media.giphy.com/media/R7XgytgbsYD1C/giphy.gif')),
+                    'https://media.giphy.com/media/W73iWE7kUC49O/giphy.gif')),
             new FullWidthText(name, new TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20.0
+                fontSize: 20.0,
+                color: Colors.white,
             )),
-            new FullWidthText(byline),
+            new FullWidthText(byline, new TextStyle(
+                 color: Colors.white,
+            )),
           ],
         ),
       ),

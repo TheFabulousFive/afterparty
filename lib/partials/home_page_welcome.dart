@@ -10,7 +10,7 @@ class _HomePageWelcomePartialState extends State<HomePageWelcomePartial> {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      color: Colors.black,
+      color: Colors.pink,
       child: new ListView(children: <Widget>[
         new StageFeed(),
         new StageFeed(),
