@@ -25,7 +25,9 @@ class StageFeed extends StatelessWidget {
   static const _PADDING = 30.0;
   final String name;
   final String byline;
-  StageFeed({this.name = "Electric Daisy Carnival Orlando, 2018", this.byline = "November 2018"});
+  final String imgSrc;
+  StageFeed({this.name = "Electric Daisy Carnival Orlando, 2018", this.byline = "November 2018",
+  this.imgSrc = 'https://media.giphy.com/media/l0HlP6ngCGSJiffhu/giphy.gif'});
 
   @override
   Widget build(BuildContext context) {
@@ -37,8 +39,7 @@ class StageFeed extends StatelessWidget {
           children: <Widget>[
             new Padding(
                 padding: new EdgeInsets.only(bottom: _PADDING),
-                child: new Image.network(
-                    'https://media.giphy.com/media/l0HlP6ngCGSJiffhu/giphy.gif')),
+                child: new Image.network(imgSrc)),
             new FullWidthText(name, new TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 18.0,
@@ -59,7 +60,9 @@ class TrackFeedItem extends StatelessWidget {
   static const _PADDING = 10.0;
   final String name;
   final String byline;
-  TrackFeedItem({this.name = "I'm The One", this.byline = "DJ Khaled"});
+  final String imgSrc;
+  TrackFeedItem({this.name = "I'm The One", this.byline = "DJ Khaled",
+  this.imgSrc = 'https://media.giphy.com/media/W73iWE7kUC49O/giphy.gif'});
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +75,7 @@ class TrackFeedItem extends StatelessWidget {
             new Padding(
                 padding: new EdgeInsets.only(bottom: _PADDING),
                 child: new Image.network(
-                    'https://media.giphy.com/media/W73iWE7kUC49O/giphy.gif')),
+                    this.imgSrc)),
             new FullWidthText(name, new TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
