@@ -24,6 +24,11 @@ class _HomePageState extends State<HomePage> {
     return new Scaffold(
       appBar: new AppBar(
         elevation: 0.0,
+        actions: <Widget>[
+          new IconButton(icon: new Icon(Icons.flip_to_front), onPressed: () {
+            
+          })
+        ],
       ),
       body: new PageView(
         controller: _pagerController,
