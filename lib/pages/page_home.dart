@@ -23,6 +23,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        title: new Text('afterparty'),
         elevation: 0.0,
         actions: <Widget>[
           new IconButton(icon: new Icon(Icons.flip_to_front), onPressed: () {
