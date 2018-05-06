@@ -11,11 +11,9 @@ class _HomePageVenuePartialState extends State<HomePageVenuePartial> {
   Widget build(BuildContext context) {
     return new Container(
       child: new ListView(children: <Widget>[
-        new StageFeed(name: 'The Manger feat. Hey Seuß'),
-        new StageFeed(name: 'The Manger feat. Hey Seuss'),
-        new StageFeed(name: 'The Manger feat. Hey Seuss'),
-        new StageFeed(name: 'The Manger feat. Hey Seuss'),
-        new StageFeed(name: 'The Manger feat. Hey Seuss')
+        new StageFeed(name: 'The Boombox'),
+        new StageFeed(name: 'Kinetic Field'),
+        new StageFeed(name: 'Circuit Grounds')
       ]),
     );
   }

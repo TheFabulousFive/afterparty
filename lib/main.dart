@@ -10,7 +10,7 @@ class App extends StatelessWidget {
     return new MaterialApp(
       title: 'Flutter Demo',
       theme: new ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       routes: <String, WidgetBuilder>{
         '/HomeScreen': (BuildContext context) => new HomePage()

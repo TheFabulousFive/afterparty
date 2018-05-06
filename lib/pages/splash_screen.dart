@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return new Scaffold(
       body: new Center(
         child: new Container(
-          height: 150.0,
+          height: 50.0,
           child: new Column(
             children: <Widget>[
               new Padding(
